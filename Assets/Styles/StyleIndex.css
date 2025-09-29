@@ -1,0 +1,26 @@
+*{ margin: 0; padding: 0;}
+body{ background: black;}
+
+#head, #footer{border: 6px groove white;  display: flex; align-items: center;
+justify-content: center;  height: 120px; box-sizing: border-box;}
+
+#panelizquierdo{ color: white; display: flex;
+flex-direction: column;  margin-right: auto; border: 6px groove white;
+width: 30%; box-sizing: border-box; height: 100;}
+
+#lista{text-align: center; margin-top: 14vh; }
+
+.ListaPanel{ padding: 10%;border: 6px groove white; width: 20%;
+margin:9px auto; border-radius: 20px;}
+
+#panelizquierdo_superior{ border: 6px groove white; margin: 0 auto; margin-top: 5vh;  padding: 30px;
+border-radius: 15px; width: 20vh; text-align: center;}
+
+#acomodador{display: flex; border: 6px groove rgb(255, 0, 0); box-sizing: border-box;
+justify-content: center; align-items: center; width: 100%; margin: 0 auto; height: 550px;}
+
+#panelcentrar{ background-color: white;border: 6px groove white;
+width: 50vh;}
+
+    
+main { flex: 1; display: flex;}
