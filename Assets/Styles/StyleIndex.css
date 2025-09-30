@@ -1,26 +1,52 @@
-*{ margin: 0; padding: 0;}
-body{ background: black;}
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Bitcount+Ink:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-#head, #footer{border: 6px groove white;  display: flex; align-items: center;
-justify-content: center;  height: 120px; box-sizing: border-box;}
+*{ margin: 0; padding: 0;}
+body{ background: url(/Mi_Perfil/Assets/Images/Fondos/fondo3.gif)}
+
+:root{
+   --color-texto: #d6c9c9;  --box-radius: 10px;
+   --color-iconos:#FF6F00;  --box-border: 6px groove white;
+    --color-hover: #E0E0E0;  --hover: scale(1.04);
+   --font-alan-sans: 'Alan Sans', sans-serif;
+  --font-krona-one: 'Krona One', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+   --box-shadow: 0 3px 30px rgba(219, 0, 0, 0.4);
+--text-shadow: 2px 2px 5px rgba(151, 157, 189, 0.9);
+--color-fondo: rgba(13, 27, 42, 0.8);
+}
+#head, #footer{border: var(--box-border); display: flex; align-items: center;
+justify-content: center;  height: 120px; box-sizing: border-box; background-color: var(--color-fondo);
+border-radius: var(--box-radius); font-family: var(--font-montserrat);}
 
 #panelizquierdo{ color: white; display: flex;
-flex-direction: column;  margin-right: auto; border: 6px groove white;
-width: 30%; box-sizing: border-box; height: 100;}
+flex-direction: column;  margin-right: auto; border: var(--box-border);
+width: 30%; box-sizing: border-box; height: 100; background-color: var(--color-fondo); border-radius: var(--box-radius);
+font-family: var(--font-alan-sans);}
 
-#lista{text-align: center; margin-top: 14vh; }
 
-.ListaPanel{ padding: 10%;border: 6px groove white; width: 20%;
-margin:9px auto; border-radius: 20px;}
+#lista{text-align: center; margin-top: 9vh; text-shadow: var(--text-shadow); }
 
-#panelizquierdo_superior{ border: 6px groove white; margin: 0 auto; margin-top: 5vh;  padding: 30px;
-border-radius: 15px; width: 20vh; text-align: center;}
+.ListaPanel{ padding: 10%;border: var(--box-border); width: 30%;
+margin:9px auto; border-radius: var(--box-radius); background-color: var(--color-iconos); text-shadow: var(--text-shadow);
+box-shadow: var(--box-shadow); font-size: 16px;}
 
-#acomodador{display: flex; border: 6px groove rgb(255, 0, 0); box-sizing: border-box;
-justify-content: center; align-items: center; width: 100%; margin: 0 auto; height: 550px;}
+#panelizquierdo_superior{ border: var(--box-border); margin: 0 auto; margin-top: 5vh;  padding: 30px;
+border-radius: var(--box-radius); width: 20vh; text-align: center; background-color: var(--color-iconos);
+box-shadow: var(--box-shadow); text-shadow: var(--text-shadow); font-family: var(--font-alan-sans);
+font-size: 20px;}
 
-#panelcentrar{ background-color: white;border: 6px groove white;
-width: 50vh;}
+#acomodador{display: flex; border: var(--box-border); box-sizing: border-box; border-radius: var(--box-radius);
+justify-content: center; align-items: center; width: 100%; margin: 0 auto; height: 550px; }
 
+#panelcentrar{ background-color: var(--color-fondo);border: var(--box-border); border-radius: var(--box-radius);
+width: 100vh; font-family: var(--font-krona-one); text-align: center; color:var(--color-texto); line-height: 2;
+text-shadow: var(--text-shadow);  margin-bottom: 5%; padding: 2%;}
+
+#imagenes img{  width: 180px; height: 130px;padding: 10px}
     
 main { flex: 1; display: flex;}
+
+.ListaPanel:hover , #panelizquierdo_superior:hover{
+    color: var(--color-hover);
+    transform: var(--hover);
+}
