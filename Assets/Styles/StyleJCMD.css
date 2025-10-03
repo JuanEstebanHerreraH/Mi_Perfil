@@ -1,0 +1,32 @@
+:root{
+   --color-texto: #ffffff;  --box-radius: 10px;
+   --color-iconos:#df9d6c;  --box-border: 6px groove white;
+    --color-hover: #E0E0E0;  --hover: scale(1.04);
+   --font-alan-sans: 'Alan Sans', sans-serif;
+  --font-krona-one: 'Krona One', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+   --box-shadow: 0 3px 30px rgba(219, 0, 0, 0.4);
+--text-shadow: 2px 2px 5px rgba(151, 157, 189, 0.9);
+--color-fondo: rgba(26, 59, 95, 0.8);
+}
+
+#JuegoUnoMODAL{ display: wrap; flex-wrap: wrap; margin: 0 auto; justify-content: center; align-items: center; background-color:var(--color-fondo);
+    text-align: center;  width: 20%; margin-top: 10%;  padding: 1%; 
+}
+.BJUM, #zero{ padding: 10%; background-color: rgba(0, 0, 0, 0.699); color: var(--color-texto);
+ margin: 3px;
+margin-top: 5px;}
+
+#pantallajuMDALT {width: 20%;padding: 5%; color: black; border: var(--box-border);
+     background-color: white;}
+
+.BJUM:hover, #zero:hover{ color: var(--color-hover); transform: var(--hover);}
+
+#pantallajuMD{ width: 80%; padding: 3%; background-color: black; color: var(--color-texto); text-align: right;
+border: var(--box-border); margin: 0 auto; margin: 10px;}
+
+#puntajeMDJU{color: black; border: var(--box-border); background-color: white;
+ margin: 3%;}
+
+#txtJUMD{ color: white; font-size: 14px; text-align: center; font-family: var(--font-alan-sans);
+line-height: 1.6;}
