@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Bitcount+Ink:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{ margin: 0; padding: 0;}
-body{ background: url(/Mi_Perfil/Assets/Images/Fondos/fondo3.gif);}
+body{ background: url(/Assets/Images/Fondos/fondo3.gif);}
 
 :root{
    --color-texto: #ffffff;  --box-radius: 10px;
