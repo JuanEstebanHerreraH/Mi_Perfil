@@ -27,3 +27,6 @@ margin-top: 20%; border: var(--box-border); position: fixed; }
   align-items: center;  
   gap: 10px;            
 }
+#cerrar{padding: 3%; background-color: rgba(3, 66, 19, 0.699);  color: var(--color-texto);
+ margin: 3px;
+margin-top: 5px; font-size: 20px;}
