@@ -17,8 +17,8 @@
  margin: 3px;
 margin-top: 5px;}
 
-#pantallajuMDALT {width: 20%;padding: 5%; color: black; border: var(--box-border);
-     background-color: white;}
+#pantallajuMDALT {width: 30%;padding: 5%; color: black; border: var(--box-border);
+     background-color: white; margin: 5px;}
 
 .BJUM:hover, #zero:hover{ color: var(--color-hover); transform: var(--hover);}
 
