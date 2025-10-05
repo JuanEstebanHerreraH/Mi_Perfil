@@ -10,23 +10,29 @@
 --color-fondo: rgba(26, 59, 95, 0.8);
 }
 
-#JuegoUnoMODAL{ display: wrap; flex-wrap: wrap; margin: 0 auto; justify-content: center; align-items: center; background-color:var(--color-fondo);
-    text-align: center;  width: 20%; margin-top: 10%;  padding: 1%; 
+#JuegoUnoMODAL{ display: flex; flex-wrap: wrap; margin: 0 auto; justify-content: center; align-items: center; 
+    text-align: center;  width: 15%; margin-top: 10%;  padding: 1%; position: fixed;
+    background-color: rgba(0, 0, 0, 0.884); margin-top: 20%;
 }
-.BJUM, #zero{ padding: 10%; background-color: rgba(0, 0, 0, 0.699); color: var(--color-texto);
- margin: 3px;
-margin-top: 5px;}
 
-#pantallajuMDALT {width: 30%;padding: 5%; color: black; border: var(--box-border);
-     background-color: white; margin: 5px;}
+.BJUM, #zero{ padding: 10%; background-color: rgba(3, 66, 19, 0.699); color: var(--color-texto);
+ margin: 3px;
+margin-top: 5px; font-size: 20px;}
+
+#pantallajuMDALT {width: 33%;padding: 5%; color: black; border: var(--box-border);
+     background-color: white; margin: 5px; font-size: 20px;}
 
 .BJUM:hover, #zero:hover{ color: var(--color-hover); transform: var(--hover);}
 
 #pantallajuMD{ width: 80%; padding: 3%; background-color: black; color: var(--color-texto); text-align: right;
-border: var(--box-border); margin: 0 auto; margin: 10px;}
+border: var(--box-border); margin: 0 auto; margin: 10px; }
 
 #puntajeMDJU{color: black; border: var(--box-border); background-color: white;
- margin: 3%;}
+ margin: 3%; }
 
-#txtJUMD{ color: white; font-size: 14px; text-align: center; font-family: var(--font-alan-sans);
-line-height: 1.6;}
+#txtJUMD{ color: white; font-size: 16px; text-align: center; font-family: var(--font-alan-sans);
+line-height: 1.6; }
+
+#cerrarjuego{padding: 10%; background-color: rgba(3, 66, 19, 0.699);  color: var(--color-texto);
+ margin: 3px;
+margin-top: 5px; font-size: 20px;}
