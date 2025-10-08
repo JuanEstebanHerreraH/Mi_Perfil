@@ -36,7 +36,7 @@ box-shadow: var(--box-shadow); text-shadow: var(--text-shadow); font-family: var
 font-size: 20px;}
 
 #acomodadorindex{display: flex; border: var(--box-border); box-sizing: border-box; border-radius: var(--box-radius);
-justify-content: center; align-items: center; width: 100%; margin: 0 auto; height: 550px; }
+justify-content: center; align-items: center; width: 100%; margin: 0 auto; height: 550px; font-size: 1.2rem;}
 
 #panelcentrar{ background-color: var(--color-fondo);border: var(--box-border); border-radius: var(--box-radius);
 width: 100vh; font-family: var(--font-krona-one); text-align: center; color:var(--color-texto); line-height: 2;

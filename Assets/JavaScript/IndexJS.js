@@ -16,10 +16,6 @@ function Contactar() {
   }
 });
 }
-
-
-
-
 function JuegoUno(){
     fetch("/Assets/Html's/ModalCode/JuegoCalculo/juegocalculo.html")
     .then(res => res.text())
@@ -112,10 +108,23 @@ function iniciarJuegoCalculo() {
         });
     });
 }
-
  function Sobremi() {
-    let prueba = document.getElementById("pruebap");
+    let sobremi = document.getElementById("pruebap");
+    sobremi.textContent = " Estudiante en ingeneria de sistemas interesado en aprender. Cursando cuarto semestre en la CUN ";
+    return;
+ }
 
-    prueba.textContent = "hola";
-    
+ function menu(){
+let menu = document.getElementById("pruebap");
+menu.textContent="    Corporación Unificada Nacional de Educación Superior - CUN 4er-Semestre Ing Sistemas Juan Esteban Herrera Herrera  Colombia, Bogota, 19 años";
+    return;
+ }
+
+ function Habilidades(){
+let panelcentrar= document.getElementById("panelcentrar");
+let hbld= document.getElementById("pruebap");
+ panelcentrar.style.flexWrap ="wrap";
+ panelcentrar.style.flexDirection = "row";
+ hbld.textContent = "holaaaaaaaaaaaa hola hola ";
+    return;
  }
