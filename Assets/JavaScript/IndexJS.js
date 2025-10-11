@@ -1,5 +1,5 @@
 function Contactar() {
-  fetch("/Assets/Html's/ModalCode/Contacto/Contacto.html")
+  fetch("Assets/Html's/ModalCode/Contacto/Contacto.html")
     .then(res => res.text())
     .then(html => {
       const acomodador = document.getElementById("Acomodador");
@@ -17,7 +17,7 @@ function Contactar() {
 });
 }
 function JuegoUno(){
-    fetch("/Assets/Html's/ModalCode/JuegoCalculo/juegocalculo.html")
+    fetch("Assets/Html's/ModalCode/JuegoCalculo/juegocalculo.html")
     .then(res => res.text())
     .then(html => {
         const juego = document.getElementById("JuegoUnoMODAL");
