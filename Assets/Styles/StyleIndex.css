@@ -40,7 +40,7 @@ justify-content: center; align-items: center; width: 100%; margin: 0 auto; heigh
 
 #panelcentrar{ background-color: var(--color-fondo);border: var(--box-border); border-radius: var(--box-radius);
 width: 100vh; font-family: var(--font-krona-one); text-align: center; color:var(--color-texto); line-height: 2;
-text-shadow: var(--text-shadow);  margin-bottom: 5%; padding: 2%;}
+text-shadow: var(--text-shadow);  margin-bottom: 5%; padding: 2%;  display: none;}
 
 #imagenes img{  width: 180px; height: 130px;padding: 10px}
     
@@ -52,4 +52,9 @@ main { flex: 1; display: flex;}
 font-size: 25px;}
 .texhead:hover{transform: var(--hover);}
 
+#panelcentrardos{ background-color: var(--color-fondo);border: var(--box-border); border-radius: var(--box-radius);
+width: 100vh; height: 60vh; font-family: var(--font-krona-one); text-align: center; color:var(--color-texto); line-height: 2;
+text-shadow: var(--text-shadow);  padding: 2%; display: flex; flex-wrap: wrap;
+   justify-content: center; gap: 30px;}
 
+.pwrap{max-height: 60vh; max-width: 80%; border: 6px groove white;}

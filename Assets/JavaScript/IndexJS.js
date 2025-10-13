@@ -1,3 +1,6 @@
+let panelwrap = document.getElementById("panelcentrardos");
+let panelcentrar= document.getElementById("panelcentrar");
+let texto = document.getElementById("pruebap");
 function Contactar() {
   fetch("Assets/Html's/ModalCode/Contacto/Contacto.html")
     .then(res => res.text())
@@ -109,22 +112,21 @@ function iniciarJuegoCalculo() {
     });
 }
  function Sobremi() {
-    let sobremi = document.getElementById("pruebap");
-    sobremi.textContent = " Estudiante en ingeneria de sistemas interesado en aprender. Cursando cuarto semestre en la CUN ";
+    texto.textContent = " Estudiante en ingeneria de sistemas interesado en aprender. Cursando cuarto semestre en la CUN ";
+    panelcentrar.style.display= "flex";
+panelwrap.style.display ="none";
     return;
  }
 
  function menu(){
-let menu = document.getElementById("pruebap");
-menu.textContent="    Corporación Unificada Nacional de Educación Superior - CUN 4er-Semestre Ing Sistemas Juan Esteban Herrera Herrera  Colombia, Bogota, 19 años";
-    return;
+texto.textContent="    Corporación Unificada Nacional de Educación Superior - CUN 4er-Semestre Ing Sistemas Juan Esteban Herrera Herrera  Colombia, Bogota, 19 años";
+    panelcentrar.style.display= "flex";
+panelwrap.style.display ="none"; 
+return;
  }
 
  function Habilidades(){
-let panelcentrar= document.getElementById("panelcentrar");
-let hbld= document.getElementById("pruebap");
- panelcentrar.style.flexWrap ="wrap";
- panelcentrar.style.flexDirection = "row";
- hbld.textContent = "holaaaaaaaaaaaa hola hola ";
+panelcentrar.style.display= "none";
+panelwrap.style.display ="flex";
     return;
  }
