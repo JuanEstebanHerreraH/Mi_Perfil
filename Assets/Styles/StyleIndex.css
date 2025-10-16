@@ -63,4 +63,4 @@ main { flex: 1; display: flex; }
 
 
 .pwrap{height: auto; width: 60vh; border: 10px groove white; border-radius: 20px;  background-color: rgba(0, 0, 0, 0.596);
-padding: 2%; word-break: break-all; font-size: 14px; }
+padding: 2%; word-break: break-all; font-size: 13px; }
