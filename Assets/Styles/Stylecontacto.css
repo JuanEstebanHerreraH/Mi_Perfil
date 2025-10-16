@@ -1,14 +1,3 @@
-:root{
-   --color-texto: #ffffff;  --box-radius: 10px;
-   --color-iconos:#df9d6c;  --box-border: 6px groove white;
-    --color-hover: #E0E0E0;  --hover: scale(1.04);
-   --font-alan-sans: 'Alan Sans', sans-serif;
-  --font-krona-one: 'Krona One', sans-serif;
-  --font-montserrat: 'Montserrat', sans-serif;
-   --box-shadow: 0 3px 30px rgba(219, 0, 0, 0.4);
---text-shadow: 2px 2px 5px rgba(151, 157, 189, 0.9);
---color-fondo: rgba(28, 60, 95, 0.8);
-}
 
 #Acomodador{background-color: rgba(0, 0, 0, 0.801); display: flex; flex-direction: column;
 justify-content: center;width: 38%; margin: 0 auto;

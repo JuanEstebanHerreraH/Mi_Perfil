@@ -1,6 +1,20 @@
 let panelwrap = document.getElementById("panelcentrardos");
 let panelcentrar= document.getElementById("panelcentrar");
 let texto = document.getElementById("pruebap");
+let cv = document.getElementById("cv");
+let contc = document.getElementById("JuegoUnoMODAL");
+let game = document.getElementById("Acomodador");
+
+game.style.position ="absolute";
+contc.style.position ="absolute";
+panelwrap.style.display = "none";
+cv.style.display ="none";
+function resturar(){
+        panelcentrar.style.display= "flex";
+panelwrap.style.display ="none";
+cv.style.display ="none";
+return;
+}
 function Contactar() {
   fetch("Assets/Html's/ModalCode/Contacto/Contacto.html")
     .then(res => res.text())
@@ -113,20 +127,39 @@ function iniciarJuegoCalculo() {
 }
  function Sobremi() {
     texto.textContent = " Estudiante en ingeneria de sistemas interesado en aprender. Cursando cuarto semestre en la CUN ";
-    panelcentrar.style.display= "flex";
-panelwrap.style.display ="none";
+    resturar();
     return;
  }
 
  function menu(){
-texto.textContent="    Corporación Unificada Nacional de Educación Superior - CUN 4er-Semestre Ing Sistemas Juan Esteban Herrera Herrera  Colombia, Bogota, 19 años";
-    panelcentrar.style.display= "flex";
-panelwrap.style.display ="none"; 
+texto.textContent="   Juan Esteban Herrera Herrera  Colombia, Bogota D.C, 19 años";
+resturar();
 return;
  }
 
  function Habilidades(){
 panelcentrar.style.display= "none";
+cv.style.display ="none";
 panelwrap.style.display ="flex";
+panelwrap.style.flexWrap ="wrap";
+panelwrap.style.justifyContent ="center";
+panelwrap.style.gap = "30px";
+panelwrap.style.overflowY ="auto";
+panelwrap.style.backgroundColor = "rgba(27, 26, 26, 0.38)";
+panelwrap.style.padding = "5";
+panelwrap.style.height = "90%"; 
+panelwrap.style.width = "90%";
+panelwrap.style.marginBottom ="0";
+panelwrap.style.borderRadius = "none";
+panelwrap.style.border = "none";
+    return;
+ }
+
+ function CV(){
+    cv.style.display ="flex";
+    panelcentrar.style.display="none";
+    panelwrap.style.display ="none";
+    cv.style.height = "100%";
+    cv.style.width = "100%";
     return;
  }
