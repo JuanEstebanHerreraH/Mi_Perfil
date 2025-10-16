@@ -6,15 +6,16 @@ text-shadow: var(--text-shadow);
 cursor: crosshair;}
 
 :root{
-   --color-texto: #ffffff;  --box-radius: 14px;
-   --color-iconos: #b79f82;  --box-border: 7px groove rgba(204, 200, 204, 0.897);
+   --color-texto: #ffffff;  --box-radius: 20px;
+   --color-iconos: #201e4bea;  --box-border: 3px groove #a295c8;
     --color-hover: #f8f4f4;  --hover: scale(1.06);
    --font-alan-sans: 'Alan Sans', sans-serif;  
   --font-krona-one: 'Krona One', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
-   --box-shadow: 0 3px 30px rgba(219, 0, 0, 0.4);
---color-fondo: #0d0d0d;
---text-shadow:  2px 2px 6px rgba(89, 216, 123, 0.7), 
+   --box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7),
+                0 0 10px rgba(155, 140, 255, 0.8);
+--color-fondo: #070201;
+--text-shadow:  2px 2px 3px rgba(89, 216, 123, 0.7), 
                  0 0 8px rgba(255, 255, 255, 0.2);
 }
 #head, #footer{border: var(--box-border); display: flex; align-items: center;
@@ -30,12 +31,12 @@ font-family: var(--font-alan-sans);}
 #lista{text-align: center; margin-top: 9vh;  }
 
 .ListaPanel{ padding: 10%;border: var(--box-border); width: 30%;
-margin:9px auto; border-radius: var(--box-radius); background-color: var(--color-iconos); ;
+margin:20px auto; border-radius: var(--box-radius); background-color: var(--color-iconos); ;
 font-size: 16px; 
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7),
-                0 0 10px rgba(155, 140, 255, 0.8);
+    box-shadow:  var(--box-shadow);
     text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.8);}
 
+    .ListaPanel:hover, #panelizquierdo_superior:hover{--box-border: 3px groove #a8c895;}
 #panelizquierdo_superior{ border: var(--box-border); margin: 0 auto; margin-top: 5vh;  padding: 30px;
 border-radius: var(--box-radius); width: 20vh; text-align: center; background-color: var(--color-iconos);
 box-shadow: var(--box-shadow);  font-family: var(--font-alan-sans);
@@ -47,20 +48,18 @@ justify-content: center; align-items: center; width: 100%; margin: 0 auto; heigh
 #panelcentrar , #panelcentrartres, #panelcentrardos{ background-color: var(--color-fondo);border: var(--box-border); border-radius: var(--box-radius);
 width: 100vh; font-family: var(--font-krona-one); text-align: center; color:var(--color-texto); line-height: 2;
  margin-bottom: 5%; padding: 2%;  display: flex;     
-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),    
-                0 0 15px rgba(155, 140, 255, 0.5),  
-                inset 0 0 8px rgba(0, 255, 70, 0.3);
+box-shadow: var(--box-shadow);
   justify-content: center; 
     align-items: center;       }
 #imagenes img{  width: 180px; height: 130px;padding: 10px}
     
 main { flex: 1; display: flex; }
-
 .ListaPanel:hover , #panelizquierdo_superior:hover{color: var(--color-hover);transform: var(--hover);}
 
 .texhead{ font-size: 25px;}
-.texhead:hover{transform: var(--hover);}
+.texhead:hover, .pwrap:hover, #panelcentrar:hover, #panelcentrartres:hover
+, #pancelcentrardos:hover{transform: var(--hover); border: 3px  groove #C4DEF8; border-radius: var(--box-radius);}
 
 
-.pwrap{height: auto; width: 60vh; border: 10px groove white; border-radius: 20px;  background-color: rgba(0, 0, 0, 0.596);
+.pwrap{height: auto; width: 60vh; border:var(--box-border); border-radius: 20px;  background-color: rgba(0, 0, 0, 0.596);
 padding: 2%; word-break: break-all; font-size: 13px; }
