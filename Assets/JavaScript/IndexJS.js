@@ -67,7 +67,7 @@ function iniciarJuegoCalculo() {
 
     nuevaOperacion();
 
-    function nuevaOperacion() {
+function nuevaOperacion() {
         num1 = Math.floor(Math.random() * 10) + 1;
         num2 = Math.floor(Math.random() * 10) + 1;
         num3 = Math.floor(Math.random() * 4);
@@ -95,12 +95,28 @@ function iniciarJuegoCalculo() {
             }
 
             if (boton.id === "igual") {
-                if (parseFloat(eval(darR.textContent))) {
-                    let valor = eval(darR.textContent);
-                    valor = parseFloat(valor.toFixed(2));
+                
+                // 1. Calculamos y redondeamos la respuesta CORRECTA a 2 decimales
+                let correcto;
+                try {
+                    // Usamos .toFixed(2) para garantizar 2 decimales y parseFloat para convertir a número
+                    correcto = parseFloat(eval(darR.textContent).toFixed(2));
+                } catch {
+                    pantalla.textContent = "ERROR";
+                    return;
                 }
-                let userValor = parseFloat(eval(pantalla.textContent).toFixed(2));
-                let correcto = parseFloat(eval(darR.textContent).toFixed(2));
+
+                // 2. Calculamos y redondeamos la respuesta del USUARIO a 2 decimales
+                let userValor;
+                try {
+                    // Usamos .toFixed(2) para garantizar 2 decimales y parseFloat para convertir a número
+                    userValor = parseFloat(eval(pantalla.textContent).toFixed(2));
+                } catch {
+                    pantalla.textContent = "ERROR";
+                    return;
+                }
+                
+                // 3. Comparamos los valores ya redondeados
                 try {
                     if (userValor === correcto) {
                         nuevaOperacion();
@@ -110,7 +126,7 @@ function iniciarJuegoCalculo() {
                     } else {
                         pantalla.textContent = "ERROR";
                     }
-                } catch {
+                } catch (e) {
                     pantalla.textContent = "ERROR";
                 }
                 return;
