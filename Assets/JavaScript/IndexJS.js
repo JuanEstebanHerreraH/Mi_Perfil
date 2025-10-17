@@ -142,15 +142,12 @@ function nuevaOperacion() {
     });
 }
 function Sobremi() {
-    texto.innerHTML = `Estudiante en ingeniería de sistemas interesado en aprender. 
-    Cursando cuarto semestre en la CUN. 
-    <a href="https://www.linkedin.com/in/juan-esteban-herrera-herrera/details/certifications/" id="certificado" target="_blank">Certificados</a>`;
+    texto.textContent = "Estudiante en ingeniería de sistemas interesado en aprender.  Cursando cuarto semestre en la CUN.";
     resturar();
     return;
 }
  function menu(){
-texto.innerHTML=` Juan Esteban Herrera Herrera  Colombia, Bogota D.C, 19 años
-<a href="https://www.linkedin.com/in/juan-esteban-herrera-herrera/details/certifications/" id="certificado" target="_blank">Certificados</a>`;
+texto.textContent="Juan Esteban Herrera Herrera  Colombia, Bogota D.C, 19 años"
 resturar();
 return;
  }
